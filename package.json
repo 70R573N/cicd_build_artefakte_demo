@@ -1,0 +1,11 @@
+{
+  "name": "statische-webseite-build",
+  "version": "1.0.0",
+  "description": "Einfaches Build-Projekt für CI/CD-Unterricht",
+  "scripts": {
+    "lint": "node scripts/lint.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/smoke-test.js"
+  }
+}
+

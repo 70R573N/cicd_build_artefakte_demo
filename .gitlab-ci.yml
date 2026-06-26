@@ -1,0 +1,33 @@
+stages:
+  - check
+  - build
+  - test
+
+lint:
+  stage: check
+  image: node:22-alpine
+  script:
+    - npm run lint
+
+build:
+  stage: build
+  image: node:22-alpine
+  script:
+    - npm run build
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 week
+
+smoke_test:
+  stage: test
+  image: node:22-alpine
+  script:
+    - npm run build
+    - npm test
+  artifacts:
+    when: always
+    paths:
+      - dist/
+    expire_in: 1 week
+

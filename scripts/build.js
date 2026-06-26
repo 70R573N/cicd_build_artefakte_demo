@@ -27,3 +27,4 @@ fs.writeFileSync(
 
 console.log("Build abgeschlossen: dist/");
 
+

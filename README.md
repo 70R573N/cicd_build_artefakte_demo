@@ -2,6 +2,11 @@
 
 Dieses Projekt zeigt einen einfachen Build-Ablauf für CI/CD.
 
+## Online-Demo
+
+- GitHub: <https://github.com/stoykow/cicd_build_artefakte_demo>
+- GitLab: <https://gitlab.stoykow.de/openclaw/cicd_build_artefakte_demo>
+
 ## Befehle
 
 ```bash
